@@ -29,7 +29,7 @@ save it to a ZIP file in the `output` directory.
 
 ### Consent
 
-To extract all the privacy data for which your company has been given consent by the user, run:
+To extract all the privacy data for which your company has been given consent by a user or business, run:
 
 ```bash
 npm run consent
@@ -37,11 +37,13 @@ npm run consent
 
 ### Exempt
 
-If you company does not require consent and is exempt under the GDPR addendum, run:
+If your company does not require consent and is exempt under the GDPR addendum, run:
 
 ```bash
 npm run exempt
 ```
+
+> If you attempt to run this and you are not exempt, the script will fail with errors.
 
 ## Fetching By Date Range
 
