@@ -4,6 +4,10 @@ const { QuadrataEnvironment } = require('@quadrata/sdk/api');
 const API_KEY = 'CHANGE_ME';
 const PRIVATE_KEY_DER_BASE_64 = 'CHANGE_ME';
 
+// Set these if you want to export by date range
+const DATE_FROM = undefined; // mm-dd-yyyy
+const DATE_TO = undefined; // mm-dd-yyyy
+
 const environment = {
     environment: QuadrataEnvironment.PRODUCTION
 };

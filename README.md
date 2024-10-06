@@ -43,3 +43,15 @@ If you company does not require consent and is exempt under the GDPR addendum, r
 npm run exempt
 ```
 
+## Fetching By Date Range
+
+If you wish to apply a date range to the export, you can do so by editing your `config.js` file and setting
+the `DATE_FROM` and `DATE_TO` values.
+
+The format for the date is `mm-dd-yyyy`.
+
+```javascript
+const DATE_FROM = '01-01-2021';
+const DATE_TO = '12-31-2021';
+```
+

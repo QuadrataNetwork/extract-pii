@@ -1,7 +1,7 @@
 const { createAccessToken, resolveEnvironmentUrl } = require('@quadrata/sdk/api');
 
 const { exportZip } = require('./lib/export_zip');
-const { API_KEY, environment } = require('./config');
+const { API_KEY, DATE_FROM, DATE_TO, environment } = require('./config');
 
 const API_URL = resolveEnvironmentUrl(environment);
 
@@ -18,7 +18,9 @@ async function getPassports(accessToken = undefined, page = 1) {
         },
         body: JSON.stringify({
             filters: {
-                isActive: true
+                isActive: true,
+                dateFrom: DATE_FROM,
+                dateTo: DATE_TO
             },
             limit: 300,
             page: page,
@@ -30,6 +32,8 @@ async function getPassports(accessToken = undefined, page = 1) {
     }
     return rows;
 }
+
+console.log('fetching passports...');
 
 getPassports()
     .then(exportZip)
