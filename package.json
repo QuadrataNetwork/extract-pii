@@ -1,0 +1,19 @@
+{
+  "name": "extract-pii",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exempt.js",
+  "scripts": {
+    "consent": "node consent.js",
+    "exempt": "node exempt.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@quadrata/sdk": "^1.1.0",
+    "jszip": "^3.10.1"
+  },
+  "devDependencies": {
+    "tslib": "^2.7.0"
+  }
+}

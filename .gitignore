@@ -1,0 +1,11 @@
+config.js
+
+*.zip
+output/*.zip
+!output/.gitkeep
+
+node_modules
+package-lock.json
+
+*.iml
+.DS_Store

@@ -1,0 +1,15 @@
+const { QuadrataEnvironment } = require('@quadrata/sdk/api');
+
+// NOTE: You can create a new API key and private key in the Quadrata dashboard
+const API_KEY = 'CHANGE_ME';
+const PRIVATE_KEY_DER_BASE_64 = 'CHANGE_ME';
+
+const environment = {
+    environment: QuadrataEnvironment.PRODUCTION
+};
+
+module.exports = {
+    API_KEY,
+    PRIVATE_KEY_DER_BASE_64,
+    environment
+};
