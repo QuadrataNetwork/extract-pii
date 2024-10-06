@@ -1,4 +1,4 @@
-const { createAccessToken, fetchPrivacyData, resolveEnvironmentUrl, QuadrataEnvironment } = require('@quadrata/sdk/api');
+const { createAccessToken, resolveEnvironmentUrl } = require('@quadrata/sdk/api');
 
 const { exportZip } = require('./lib/export_zip');
 const { API_KEY, environment } = require('./config');
